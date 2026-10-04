@@ -9,26 +9,6 @@ A complete step‑by‑step guide and template to migrate your existing Python T
 
 ---
 
-## 📑 Table of Contents
-
-- [Overview](#-overview)
-- [Key Architecture Difference: Polling vs Webhook](#-key-architecture-difference-polling-vs-webhook)
-- [Prerequisites](#-prerequisites)
-- [Project Directory Structure](#-project-directory-structure)
-- [Step 1: Initialize Cloudflare Worker](#1-initialize-cloudflare-worker)
-- [Step 2: Python vs TypeScript Code Comparison](#2-python-vs-typescript-code-comparison)
-- [Step 3: Worker Implementation (with Security)](#3-worker-implementation-with-security)
-- [Step 4: Manage Secrets & Environment Variables](#4-manage-secrets--environment-variables)
-- [Step 5: Local Testing](#5-local-testing)
-- [Step 6: Deploy to Cloudflare](#6-deploy-to-cloudflare)
-- [Step 7: Configure the Telegram Webhook](#7-configure-the-telegram-webhook)
-- [Step 8: Database & State Migration](#8-database--state-migration)
-- [Step 9: Automated Deployments (GitHub Actions CI/CD)](#9-automated-deployments-github-actions-cicd)
-- [Troubleshooting & Tips](#-troubleshooting--tips)
-- [License](#-license)
-
----
-
 ## ⚡ Overview
 
 Migrating a bot from Python to TypeScript on Cloudflare Workers is a **code rewrite** combined with an **infrastructure modernization**:
