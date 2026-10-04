@@ -60,21 +60,29 @@ flowchart TD
 ## 📂 Project Directory Structure
 
 ```text
-my-telegram-bot/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # CI/CD via GitHub Actions
+telegram-bot-cloudflare-worker/
+│
 ├── src/
 │   ├── handlers/
-│   │   ├── commands.ts         # /start, /help, etc.
-│   │   └── callbacks.ts        # Inline‑keyboard callbacks
-│   ├── types.ts                # Telegram update types & Env interface
-│   └── index.ts                # Worker entry point (fetch handler)
+│   │   ├── commands.ts
+│   │   └── callbacks.ts
+│   ├── telegram.ts
+│   ├── types.ts
+│   └── index.ts
+│
+├── scripts/
+│   └── set-webhook.sh
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
 ├── .gitignore
 ├── package.json
 ├── tsconfig.json
-├── wrangler.jsonc              # Cloudflare configuration
-└── README.md
+├── wrangler.jsonc
+├── README.md
+└── LICENSE
 ```
 
 ---
