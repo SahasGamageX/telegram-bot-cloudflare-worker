@@ -12,31 +12,6 @@
 
 ---
 
-## 📑 Table of Contents
-
-- [Why Migrate from Python to Cloudflare Workers?](#-why-migrate-from-python-to-cloudflare-workers)
-- [Architecture: Long Polling vs Edge Webhooks](#-architecture-long-polling-vs-edge-webhooks)
-- [Project Overview & Folder Structure](#-project-overview--folder-structure)
-- [Step-by-Step Tutorial](#-step-by-step-tutorial)
-  - [Step 1: Prerequisites](#step-1-prerequisites)
-  - [Step 2: Clone or Initialize the Project](#step-2-clone-or-initialize-the-project)
-  - [Step 3: Understanding the TypeScript Code](#step-3-understanding-the-typescript-code)
-  - [Step 4: Setting Up Secrets & Local Testing](#step-4-setting-up-secrets--local-testing)
-  - [Step 5: Deploying to Cloudflare Workers](#step-5-deploying-to-cloudflare-workers)
-  - [Step 6: Setting Up the Telegram Webhook](#step-6-setting-up-the-telegram-webhook)
-  - [Step 7: Verifying & Debugging with Live Logs](#step-7-verifying--debugging-with-live-logs)
-- [Python vs. TypeScript Code Comparison](#-python-vs-typescript-code-comparison)
-  - [1. Simple Commands (/start, /ping)](#1-simple-commands-start-ping)
-  - [2. Inline Keyboards & Buttons](#2-inline-keyboards--buttons)
-  - [3. Callback Queries (Button Clicks)](#3-callback-queries-button-clicks)
-  - [4. Sending Photos & Media](#4-sending-photos--media)
-- [Database & State Migration (SQLite to Cloudflare D1 / KV)](#-database--state-migration)
-- [⚠️ 5 Critical Gotchas for Python Developers](#-5-critical-gotchas-for-python-developers)
-- [Contributing & Feedback](#-contributing--feedback)
-- [License](#-license)
-
----
-
 ## ⚡ Why Migrate from Python to Cloudflare Workers?
 
 | Feature | Traditional Python Bot (VPS / Heroku / EC2) | Cloudflare Workers + TypeScript |
